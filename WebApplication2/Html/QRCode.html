@@ -5,19 +5,23 @@
     <title></title>
 </head>
 <body>
-    <div id="qrcode"></div>
+    <div id="qrcode" style="margin:0 auto;text-align:center;margin-left:40%;margin-top:15%"></div>
+    <div style="margin:0 auto;text-align:center;margin-top:2%;font-weight:bold;margin-left:-40px;font-size:large">请扫描二维码拨打挪车电话</div>
 </body>
-</html>
+</html> 
 <script src="../Scripts/jquery-3.3.1.js"></script>
 <script src="../Scripts/qrcode.js"></script>
 <script>
-    new QRCode(document.getElementById("qrcode"), "https://github.com/davidshimjs/qrcodejs");
+    //new QRCode(document.getElementById("qrcode"), "https://zhaoxiyang96.github.io/zhaoxiyang/Html/callphone.html","请扫描二维码拨打挪车电话");
     var qrcode = new QRCode(document.getElementById("qrcode"), {
-        text: "生成二维码的方法不止一种",
-        width: 128,
-        height: 128,
-        colorDark: "#f60",
+        strFooter: "请扫描二维码",
+        text: "https://zhaoxiyang96.github.io/zhaoxiyang/Html/callphone.html",
+        width: 240,
+        height: 240,
+        colorDark: "green",
         colorLight: "#ccc",
-        correctLevel: 0 // 二维码结构复杂性 0~3
+        correctLevel: 2 // 二维码结构复杂性 0~3
+        
     });
+    makeCode("请扫描二维码")
 </script>
