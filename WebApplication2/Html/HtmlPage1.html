@@ -5,6 +5,19 @@
     <title></title>
 </head>
 <body>
-    <div>11111</div>
+    <div id="qrcode"></div>
 </body>
 </html>
+<script src="../Scripts/jquery-3.3.1.js"></script>
+<script src="../Scripts/qrcode.js"></script>
+<script>
+    new QRCode(document.getElementById("qrcode"), "https://github.com/davidshimjs/qrcodejs");
+    var qrcode = new QRCode(document.getElementById("qrcode"), {
+        text: "生成二维码的方法不止一种",
+        width: 128,
+        height: 128,
+        colorDark: "#f60",
+        colorLight: "#ccc",
+        correctLevel: 0 // 二维码结构复杂性 0~3
+    });
+</script>
