@@ -145,6 +145,8 @@
     <Content Include="Content\Site.css" />
     <Content Include="Html\callphone.html" />
     <Content Include="Html\QRCode.html" />
+    <Content Include="Img\微信图片_20200912160102.jpg" />
+    <Content Include="Img\微信图片_20200921173735.png" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />

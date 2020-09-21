@@ -5,7 +5,9 @@
     <title></title>
 </head>
 <body>
-    <div id="qrcode" style="margin:0 auto;text-align:center;margin-left:40%;margin-top:15%"></div>
+    <div id="qrcode" style="margin:0 auto;text-align:center;margin-left:40%;margin-top:15%">
+        <img src="../Img/微信图片_20200921173735.png"/>
+    </div>
     <div style="margin:0 auto;text-align:center;margin-top:2%;font-weight:bold;margin-left:-40px;font-size:large">请扫描二维码拨打挪车电话</div>
 </body>
 </html> 
@@ -20,8 +22,35 @@
         height: 240,
         colorDark: "green",
         colorLight: "#ccc",
-        correctLevel: 2 // 二维码结构复杂性 0~3
+        correctLevel: 2, // 二维码结构复杂性 0~3
+        src:"微信图片_20200912160102.jpg"
         
     });
-    makeCode("请扫描二维码")
+    //$('#qrcode').qrcode({
+    //    render: 'image',//canvas,image,div 生成的元素
+    //    minVersion: 7,//1-40 花格密度
+    //    ecLevel: 'H',//'L', 'M', 'Q' or 'H' 精准度
+    //    left: 0,// 二维码相对父元素的偏移
+    //    top: 0,// 二维码相对父元素的偏移
+    //    size: 300,// 二维码尺寸
+    //    fill: '#000',// 花格的填充色
+    //    background: null,// 二维码背景
+    //    text: 'https://zhaoxiyang96.github.io/zhaoxiyang/Html/callphone.html',// 二维码内容
+    //    radius: 0.1,//0.0 .. 0.5 花格圆角
+    //    quiet: 2, //二维码外边距
+    //    mode: 4,//内嵌模式
+    //    // 0: 无内嵌内容
+    //    // 1: 内嵌横排文字（中间截断）
+    //    // 2: 内嵌横排文字（中间不截断）
+    //    // 3: 内嵌横排图片（中间截断）
+    //    // 4: 内嵌图片盒子 （居中）
+    //    mSize: 0.2,//内嵌尺寸
+    //    mPosX: 0.5,//内嵌位置偏移量
+    //    mPosY: 0.5,//内嵌位置偏移量
+    //    label: '内嵌文字',
+    //    fontname: '楷体',//内嵌文字字体
+    //    fontcolor: '#fa9863',//内嵌文字颜色
+    //    image: $('.qrcode img')[0]//图片元素(不能使用外联)
+    //});
 </script>
+
